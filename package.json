@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/momo427/mern-book-search#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
     "express-graphql": "^0.12.0",
     "graphql": "^15.5.1"
