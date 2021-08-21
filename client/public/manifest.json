@@ -1,25 +1,20 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "files": {
+    "main.css": "/static/css/main.4f1b584e.chunk.css",
+    "main.js": "/static/js/main.f4d50cae.chunk.js",
+    "main.js.map": "/static/js/main.f4d50cae.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0d34265a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0d34265a.js.map",
+    "static/js/2.43a5e866.chunk.js": "/static/js/2.43a5e866.chunk.js",
+    "static/js/2.43a5e866.chunk.js.map": "/static/js/2.43a5e866.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.4f1b584e.chunk.css.map": "/static/css/main.4f1b584e.chunk.css.map",
+    "static/js/2.43a5e866.chunk.js.LICENSE.txt": "/static/js/2.43a5e866.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0d34265a.js",
+    "static/js/2.43a5e866.chunk.js",
+    "static/css/main.4f1b584e.chunk.css",
+    "static/js/main.f4d50cae.chunk.js"
+  ]
 }
