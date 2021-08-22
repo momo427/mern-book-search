@@ -9,7 +9,7 @@ import { removeBookId } from '../utils/localStorage';
 const SavedBooks = () => {
 
   const [userData, setUserData] = useState({});
-  const { loading, data } = useQuery( QUERY_ME);
+  const { loading } = useQuery( QUERY_ME);
 
 
   // create function that accepts the book's mongo _id value as param and deletes the book from the database

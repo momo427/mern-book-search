@@ -17,13 +17,19 @@ const resolvers = {
     //   book: async (parent, { bookId }) => {
     //     return Book.findOne({ _id: bookId });
     //   },
-      me: async (parent, args, context) => {
-        if (context.users) {
-          return User.findOne({ _id: context.users._id }).populate('books');
-        }
-        throw new AuthenticationError('You need to be logged in!');
-      },
-    },
+    me: async (parent, args, context) => {
+      if (context.user) {
+        const userData = await User.findOne({ _id: context.user._id })
+          .select('-__v -password')
+          .populate('books');
+    
+        return userData;
+      }
+    
+      throw new AuthenticationError('Not logged in');
+    }
+  },
+
 
   Mutation: {
     addUser: async (parent, { username, email, password }) => {
@@ -80,6 +86,5 @@ const resolvers = {
         throw new AuthenticationError('You need to be logged in!');
       },
     }
-};
-
+  };
 module.exports = resolvers;
