@@ -17,6 +17,7 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
   introspection: true,
+  //server error when auth not commented out
   // context: authMiddleware,
 });
 
