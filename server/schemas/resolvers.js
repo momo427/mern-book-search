@@ -17,6 +17,8 @@ const resolvers = {
     //   book: async (parent, { bookId }) => {
     //     return Book.findOne({ _id: bookId });
     //   },
+
+    //switched to using input in type in typeDefs so I would only need one query
     me: async (parent, args, context) => {
       if (context.user) {
         const userData = await User.findOne({ _id: context.user._id })
@@ -33,7 +35,7 @@ const resolvers = {
 
   Mutation: {
     addUser: async (parent, { username, email, password }) => {
-        const user = await Users.create({ username, email, password });
+        const user = await Users.create({ args });
         const token = signToken(user);
         return { token, user };
       },

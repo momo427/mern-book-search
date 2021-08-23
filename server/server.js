@@ -16,9 +16,10 @@ const app = express();
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  introspection: true,
+ introspection: true,
   //server error when auth not commented out
-  // context: authMiddleware,
+  //curl: (7) Failed to connect to localhost port 3001: Connection refused
+  //  context: authMiddleware,
 });
 
 server.applyMiddleware({ app });

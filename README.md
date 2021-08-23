@@ -11,4 +11,27 @@ Using Graphql and Apollo server to reconstruct MERN book search app.
 
 4. Deploy your application to Heroku with a MongoDB database using MongoDB Atlas.
 
+
 ![picture](/mernapp.png)
+
+
+## Technologies
+
+1. Graphql
+2. Apollo
+3. Node
+4. React
+5. JavaScript
+6. express
+7. Heroku
+8. MongoDB atlas
+
+
+## Development
+
+Still running into an auth error, will continue to debugg.
+
+
+## Usage
+
+Use link to search and build a list of books.
